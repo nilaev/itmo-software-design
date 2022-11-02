@@ -7,5 +7,7 @@
 .project
 .idea
 .gradle
+/out
+*.iml
 
 dependency*
