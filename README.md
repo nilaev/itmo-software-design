@@ -1,6 +1,6 @@
 # Условия домашних заданий по Software Design
 
-## [Лабораторная 1.](https://github.com/nilaev/itmo-software-design/tree/main/hw1)
+## [Лабораторная 1.](https://github.com/nilaev/itmo-software-design/tree/main/hw-01)
 Цель: получить практический опыт применения динамических проверок в коде (assertions).
 
 Необходимо реализовать структуры данных LRUCache на хешмапе и двусвязном списке. При реализации необходимо самостоятельно продумать 
@@ -12,7 +12,7 @@
 - задание можно сдавать по почте, в теме письма указать [SD-TASK]
 
 
-## [Лабораторная 2.](https://github.com/nilaev/itmo-software-design/tree/main/hw2)
+## [Лабораторная 2.](https://github.com/nilaev/itmo-software-design/tree/main/hw-02)
 Цель: получить практический опыт реализация модульных тестов и тестов, использующих mock-объекты.
 
 Необходимо реализовать компонент, который будет вычислять частоту появления твитов с
@@ -32,7 +32,7 @@
 Примеры из лекции:
 https://github.com/akirakozov/example-apps/tree/master/java/mock-example
 
-## [Лабораторная 3](https://github.com/nilaev/itmo-software-design/tree/main/hw3)
+## [Лабораторная 3](https://github.com/nilaev/itmo-software-design/tree/main/hw-03)
 Цель: получить практический опыт применения техник рефакторинга.
 
 Скачайте приложение: https://github.com/akirakozov/software-design/tree/master/java/refactoring
