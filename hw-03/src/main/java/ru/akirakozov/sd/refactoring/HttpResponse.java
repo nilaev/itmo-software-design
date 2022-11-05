@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 
 public class HttpResponse {
@@ -34,11 +35,21 @@ public class HttpResponse {
 
     public void commit(HttpServletResponse response) {
         try {
-            response.getWriter().println("<html><body>");
+            boolean needed_head = true;
+            for (String line : lines) {
+                if (Objects.equals(line, "OK")) {
+                    needed_head = false;
+                }
+            }
+            if (needed_head) {
+                response.getWriter().println("<html><body>");
+            }
             for (String line : lines) {
                 response.getWriter().println(line);
             }
-            response.getWriter().println("</body></html>");
+            if (needed_head) {
+                response.getWriter().println("</body></html>");
+            }
             response.setContentType("text/html");
             response.setStatus(HttpServletResponse.SC_OK);
             lines.clear();
