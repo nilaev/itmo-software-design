@@ -87,7 +87,7 @@ LEFT NUMBER (30) PLUS NUMBER(2) RIGHT DIV NUMBER (8) ->
 
 ##### Схема работы калькулятора:
 
-![Pipeline](https://github.com/nilaev/itmo-software-design/tree/main/hw-06/images/pipeline.png)
+![Pipeline](https://github.com/nilaev/itmo-software-design/blob/main/hw-06/images/pipeline.png)
 
 * Входной набор данных разбирается на отдельные токены Tokenizer'ом;
 * ParserVisitor обходит все полученные токены и преобразует их к обратной польской записи;
@@ -101,7 +101,7 @@ Tokenizer проще всего реализовать в виде конечн�
 
 ##### Схема автомата:
 
-![State](https://github.com/nilaev/itmo-software-design/tree/main/hw-06/images/state.png)
+![State](https://github.com/nilaev/itmo-software-design/blob/main/hw-06/images/state.png)
 
 ##### Скелет классов:
 
